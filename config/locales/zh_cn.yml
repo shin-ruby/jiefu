@@ -14,7 +14,7 @@ zh_cn:
       products: "产品与服务"
       support: "技术与支持"
       buy: "如何购买"
-      event: "研讨与活动"
+      event: "新闻资讯"
       about_us: "关于我们"
       search_product_info: "查找产品支持信息"
       online_feedback: "Online反馈"
@@ -153,10 +153,10 @@ zh_cn:
   home:
     index:
       newest: "最新产品"
-      technical_event: "技术研讨活动"
+      technical_event: "新闻资讯"
       technical_event_content: "帮助客户实现商业成功，才是真正的成功。让你轻松购买，无后顾之忧。"
-      company_event: "公司活动"
-      company_event_content: "帮助客户实现商业成功，才是真正的成功。让你轻松购买，无后顾之忧。"
+      company_event: "关于我们"
+      company_event_content: "杰夫电声紧临上海，位于美丽的太湖之滨--无锡，于1998年1月..."
       other_products: "其他产品"
   product_categories:
     show_top:
