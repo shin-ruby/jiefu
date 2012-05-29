@@ -45,7 +45,7 @@ en:
       product_catalog: "Product Catalog"
     product:
       type_of_system: "Type Of System"
-      size: "Size（length×width×height）"
+      size: "Size（length×width×height）mm"
       rated_power: "Rated Power:"
       rated_impedance: "Rated Impedance:"
       sensitivity: "Sensitivity："
