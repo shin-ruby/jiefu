@@ -17,14 +17,14 @@
                         
                         <% @articles.each do |article| %>
                             <div class="span-18"><span class="green-caption"><%= link_to article.name, article %></span></div>
-                            <div>
+                            <div style="padding-top:5px;">
                                 <div class="span-18 caption-line"></div>
                             </div>
                             <div class="span-7 about-img">
                                 <%= link_to (image_tag article.default_image, :width=>"271",:height=>"160"), article%>
                             </div>
                             <div class="span-10 last about-content">
-                              <p><%= (truncate_html article.body, :length=>120).html_safe %></p>
+                              <%= (truncate_html article.body, :length=>120).html_safe %>
                             </div>
                             <p class="span-18 about-more"><%=link_to t(".more"), article %></p>
                         <% end %>
