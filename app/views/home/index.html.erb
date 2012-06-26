@@ -62,7 +62,9 @@
                               <% end %>
                             </ul>
                           </div>
-                          <div class="r"><%=image_tag "chanpin4.jpg", :width=>"120",:height=>"132"%></div>
+                          <div class="r"><% %w(chanpin44.jpg chanpin2.png).each do |img| %>
+                            <%= image_tag img, :width=>"120",:height=>"132" %>
+                          <% end %></div>
                         </div>
                     </div>
                  </div>
@@ -88,7 +90,7 @@
           
                                       </ul>
                                     </div>
-                                    <div class="r"><img alt="Chanpin2" height="132" src="/assets/chanpin2-d9e50e3c5d56daa0b6927cd0284a5fa9.png" width="120"></div>
+                                    <div class="r"><%=image_tag "chanpin55.jpg", :width=>"120",:height=>"132"%></div>
                                   </div>
                               </div>
                            </div>
