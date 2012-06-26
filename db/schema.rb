@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(:version => 20120330080804) do
     t.integer  "author_id"
     t.string   "author_type"
     t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.string   "namespace"
   end
 
@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(:version => 20120330080804) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                            :null => false
+    t.datetime "updated_at",                                            :null => false
   end
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
@@ -68,8 +68,8 @@ ActiveRecord::Schema.define(:version => 20120330080804) do
     t.string   "en_name"
     t.string   "zh_cn_name"
     t.integer  "parent_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
     t.integer  "position",   :default => 300
     t.string   "type"
     t.string   "image"
@@ -113,8 +113,8 @@ ActiveRecord::Schema.define(:version => 20120330080804) do
     t.string   "zh_cn_name"
     t.text     "zh_cn_body"
     t.text     "en_whitepaper"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
     t.boolean  "is_new"
     t.integer  "category_id"
     t.text     "zh_cn_whitepaper"
@@ -142,8 +142,8 @@ ActiveRecord::Schema.define(:version => 20120330080804) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                                         :null => false
+    t.datetime "updated_at",                                                         :null => false
     t.string   "name"
     t.string   "phone"
     t.string   "company_name"
