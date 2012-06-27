@@ -50,54 +50,33 @@
       </div>
     </div>
 
-    <!--mm  start  here-->
-    <div class="span-8 chanpin1bg">
-      <div class="pad-nei">
-        <div class="white">
+
+    <% @categories.each_with_index do |category, index| %>
+        <div class="span-8 chanpin1bg <%= 'last' if index==@categories.size-1 %>">
           <div class="pad-nei">
-            <div class="chanpin1">
-              <div class="span-4 last"><p><span class="title-index">扬声器</span></p>
-                <ul class="list">
-                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/29-tv-speakers">电视扬声器</a></li>
-				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/30-sound-speaker">箱体扬声器</a></li>
-                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/31-car-speaker">汽车扬声器</a></li>
-				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/32-communications">其他扬声器</a></li>
-                </ul>
-              </div>
-              <div class="r">
-                    <%= image_tag "chanpin44.jpg" %>
+            <div class="white">
+              <div class="pad-nei">
+                <div class="chanpin1">
+                  <div class="span-4 last"><p><span class="title-index"><%= category.name %></span></p>
+                    <ul class="list">
+                      <% category.children.each do |sub_category| %>
+                          <li><%= link_to sub_category.name, sub_category %></li>
+
+                      <% end %>
+                    </ul>
+                  </div>
+                  <div class="r">
+                        <%= image_tag "chanpin2.png" %>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-     <div class="span-8 chanpin1bg">
-      <div class="pad-nei">
-        <div class="white">
-          <div class="pad-nei">
-            <div class="chanpin1">
-              <div class="span-4 last"><p><span class="title-index">音响系统</span></p>
-                <ul class="list">
-                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/34-home-theater">家庭影院音箱</a></li>
-				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/35-high-fidelity">高保真音箱</a></li>
-                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/45-multimedia">多媒体音箱</a></li>
-				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/55-beach-speaker">沙滩音箱</a></li>
-                </ul>
-              </div>
-              <div class="r">
-                    <%= image_tag "chanpin2.png" %>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-<hr class=" space"/>
-    <!--mm  end  here-->
+        <% if  index==@categories.size-1 %>
+            <hr class=" space"/>
+        <% end %>
+    <% end %>
 
     <!--其他产品  start  here-->
     <div class="span-8 chanpin1bg ">
