@@ -1,136 +1,164 @@
 <!--banner  start   here-->
-          <div class="banner">
-       	  	  <div class="container"> <div id="wrapper">
-        <div class="slider-wrapper theme-default">
+<div class="banner">
+  <div class="container">
+    <div id="wrapper">
+      <div class="slider-wrapper theme-default">
         <div class="ribbon"></div>
-            <div id="slider" class="nivoSlider">
-                  <%= image_tag ("#{I18n.locale}_banner.png") %>
-                  <%= image_tag "banner/images/banner2.png" %>
-                  <%= image_tag "banner/images/banner3.png" %>
-                  <%= image_tag ("banner/images/#{I18n.locale}_banner4.png") %>
+        <div id="slider" class="nivoSlider">
+          <%= image_tag ("#{I18n.locale}_banner.png") %>
+          <%= image_tag "banner/images/banner2.png" %>
+          <%= image_tag "banner/images/banner3.png" %>
+          <%= image_tag ("banner/images/#{I18n.locale}_banner4.png") %>
 
-            </div>
         </div>
+      </div>
 
-    </div></div>
+    </div>
+  </div>
+</div>
+<div class="line"></div>
+<div class="line2"></div>
+<!--news  start   here-->
+<div class="news-bg">
+  <div class="container ju">
+    <span class="small-blue-caption"><%= I18n.t("layouts.application.jiefu_announcement") %>:</span>
+    <span><%= link_to @article.name, @article %></span></div>
+</div>
+
+
+<div class="center">
+  <div class="container">
+    <hr class="space"/>
+    <!--chanpin1  start  here-->
+
+    <div class="span-8 chanpin1bg">
+      <div class="pad-nei">
+        <div class="white">
+          <div class="pad-nei">
+            <div class="chanpin1">
+              <div class="span-4 last"><p><span class="title-index"><%= t(".newest") %></span></p>
+                <ul class="list">
+                  <% @products.each do |product| %>
+                      <li><%= link_to product.name, product %></li>
+                  <% end %>
+                </ul>
+              </div>
+              <div class="r"><%= image_tag "chanpin1.png", :width => "120", :height => "132" %></div>
+            </div>
           </div>
-           <div class="line"></div>
-           <div class="line2"></div>
-           <!--news  start   here-->
-           <div class="news-bg">
-                <div class="container ju"><span class="small-blue-caption"><%= I18n.t("layouts.application.jiefu_announcement")%>:</span>
-                  <span><%= link_to @article.name, @article %></span></div>
-           </div>
-
-
-   		<div class="center">
-        <div class="container">
-        <hr class="space"/>
-        <!--chanpin1  start  here-->
-
-          <div class="span-8 chanpin1bg">
-            	<div class="pad-nei">
-                  <div class="white">
-                    <div class="pad-nei">
-                        <div class="chanpin1">
-                          <div class="span-4 last"><p><span class="title-index"><%=t(".newest")%></span></p>
-                            <ul class="list">
-                              <% @products.each do |product| %>
-                                <li><%=link_to product.name, product %></li>
-                              <% end %>
-                            </ul>
-                          </div>
-                          <div class="r"><%=image_tag "chanpin1.png", :width=>"120",:height=>"132"%></div>
-                        </div>
-                    </div>
-                 </div>
-               </div>
-            </div>
-
-
-          <% @categories.each_with_index do |category, index| %>
-        	<div class="span-8 chanpin1bg <%= 'last' if index==@categories.size-1 %>">
-            	<div class="pad-nei">
-                  <div class="white">
-                    <div class="pad-nei">
-                        <div class="chanpin1">
-                          <div class="span-4 last"><p><span class="title-index"><%=category.name%></span></p>
-                            <ul class="list">
-                              <% category.children.each do |sub_category| %>
-                                <li><%=link_to sub_category.name,sub_category %></li>
-
-                              <% end %>
-                            </ul>
-                          </div>
-                          <div class="r"><% %w(chanpin44.jpg chanpin2.png).each do |img| %>
-                            <%= image_tag img, :width=>"120",:height=>"132" %>
-                          <% end %></div>
-                        </div>
-                    </div>
-                 </div>
-               </div>
-            </div>
-             <%if  index==@categories.size-1%>
-                <hr class=" space"/>
-              <% end %>
-          <% end %>
-
-          <!--其他产品  start  here-->
-          <div class="span-8 chanpin1bg ">
-                      	<div class="pad-nei">
-                            <div class="white">
-                              <div class="pad-nei">
-                                  <div class="chanpin1">
-                                    <div class="span-4 last"><p><span class="title-index"><%= t(".other_products") %></span></p>
-                                      <ul class="list">
-                                        <% other_product_categories.each do |category| %>
-                                          <li><%= link_to category.name, category %></li>
-                                        <% end %>
-          
-          
-                                      </ul>
-                                    </div>
-                                    <div class="r"><%=image_tag "chanpin55.jpg", :width=>"120",:height=>"132"%></div>
-                                  </div>
-                              </div>
-                           </div>
-                         </div>
-                      </div>
-
-           <!--演讲与讨论  start  here-->
-        	<div class="span-8 chanpin1bg">
-            	<div class="pad-nei">
-                  <div class="white">
-                    <div class="pad-nei">
-                        <div class="chanpin1">
-                          <div class="span-5 last">
-                            <p><span class="title-index"><%=t(".technical_event")%></span></p>
-                            <p class="span-4 neirong"><%=t(".technical_event_content")%></p>
-                            <p class="more-index"><%= link_to "more>", event_articles_path %></a></p>
-                          </div>
-                          <div class="span-3 last r"><%=image_tag "yanjiang.png"%></div>
-                        </div>
-                    </div>
-                 </div>
-               </div>
-            </div>
-            <!--公司活动  start  here-->
-        	<div class="span-8 chanpin1bg last">
-            	<div class="pad-nei">
-                  <div class="white">
-                    <div class="pad-nei">
-                        <div class="chanpin1">
-                          <div class="span-5 last"><p><span class="title-index"><%=t(".company_event")%></span></p>
-                            <p class="span-4 neirong"><%=t(".company_event_content")%></p>
-                            <p class="more-index"><%= link_to "more>", about_us_articles_path %></a></p>
-                          </div>
-                          <div class="span-3 last r"><%=image_tag "gongsi.png"%></div>
-                        </div>
-                    </div>
-                 </div>
-               </div>
-            </div>
-
-
         </div>
+      </div>
+    </div>
+
+    <!--mm  start  here-->
+    <div class="span-8 chanpin1bg">
+      <div class="pad-nei">
+        <div class="white">
+          <div class="pad-nei">
+            <div class="chanpin1">
+              <div class="span-4 last"><p><span class="title-index">扬声器</span></p>
+                <ul class="list">
+                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/29-tv-speakers">电视扬声器</a></li>
+				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/30-sound-speaker">箱体扬声器</a></li>
+                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/31-car-speaker">汽车扬声器</a></li>
+				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/32-communications">其他扬声器</a></li>
+                </ul>
+              </div>
+              <div class="r">
+                    <%= image_tag "chanpin44.jpg" %>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+     <div class="span-8 chanpin1bg">
+      <div class="pad-nei">
+        <div class="white">
+          <div class="pad-nei">
+            <div class="chanpin1">
+              <div class="span-4 last"><p><span class="title-index">音响系统</span></p>
+                <ul class="list">
+                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/34-home-theater">家庭影院音箱</a></li>
+				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/35-high-fidelity">高保真音箱</a></li>
+                  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/45-multimedia">多媒体音箱</a></li>
+				  <li><a href="http://jiefu2.herokuapp.com/zh_cn/product_categories/55-beach-speaker">沙滩音箱</a></li>
+                </ul>
+              </div>
+              <div class="r">
+                    <%= image_tag "chanpin2.png" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<hr class=" space"/>
+    <!--mm  end  here-->
+
+    <!--其他产品  start  here-->
+    <div class="span-8 chanpin1bg ">
+      <div class="pad-nei">
+        <div class="white">
+          <div class="pad-nei">
+            <div class="chanpin1">
+              <div class="span-4 last"><p><span class="title-index"><%= t(".other_products") %></span></p>
+                <ul class="list">
+                  <% other_product_categories.each do |category| %>
+                      <li><%= link_to category.name, category %></li>
+                  <% end %>
+
+
+                </ul>
+              </div>
+              <div class="r"><%= image_tag "chanpin55.jpg", :width => "120", :height => "132" %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--演讲与讨论  start  here-->
+    <div class="span-8 chanpin1bg">
+      <div class="pad-nei">
+        <div class="white">
+          <div class="pad-nei">
+            <div class="chanpin1">
+              <div class="span-5 last">
+                <p><span class="title-index"><%= t(".technical_event") %></span></p>
+
+                <p class="span-4 neirong"><%= t(".technical_event_content") %></p>
+
+                <p class="more-index"><%= link_to "more>", event_articles_path %></a></p>
+              </div>
+              <div class="span-3 last r"><%= image_tag "yanjiang.png" %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--公司活动  start  here-->
+    <div class="span-8 chanpin1bg last">
+      <div class="pad-nei">
+        <div class="white">
+          <div class="pad-nei">
+            <div class="chanpin1">
+              <div class="span-5 last"><p><span class="title-index"><%= t(".company_event") %></span></p>
+
+                <p class="span-4 neirong"><%= t(".company_event_content") %></p>
+
+                <p class="more-index"><%= link_to "more>", about_us_articles_path %></a></p>
+              </div>
+              <div class="span-3 last r"><%= image_tag "gongsi.png" %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
