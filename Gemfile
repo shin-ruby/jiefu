@@ -37,7 +37,7 @@ gem 'capistrano'
 # gem 'ruby-debug'
 
 gem "nifty-generators", :group => :development
-gem "devise"
+gem "devise", "~> 2.1.2"
 gem "jquery-rails"
 gem "activeadmin"
 gem "cancan"
