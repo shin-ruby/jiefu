@@ -60,7 +60,7 @@ en:
       buy_overseas_comment: "Signed the purchase agreement overseas company"
       contact_us_online: "Contact Us Online"
       contact_us_online_comment: "Access to e-mail help"
-      contact_info_locally: " Address: in wuxi, jiangsu province, China xishan district eight and economic development zone<br>
+      contact_info_locally: " Address: No.228 XiGang Road, Bashi XiBei Town, Wuxi City, Jiangsu, China <br>
                     Zip code: 214192<br>
                     Telephone: + 86 (0) 510 83781398<br>
                     Fax: + 86 (0) 510 83782499<br>
@@ -68,13 +68,13 @@ en:
       jiefu_china: "JIEFU China"
       view_larger_map: "View Larger Map"
       jiefu_overseas: "JIEFU Overseas"
-      contact_info_overseas: "Address: north Korea is still way turtle end city workers group hole yurakucho 196<br>
+      contact_info_overseas: "Address: 196, Gongdan-Dong, Gumi-City, Kyungsangbuk-D0, S.Korea <br>
                              Zip code: 730030<br>
                              Telephone: + 82 (0) 54 461 0629<br>
                              Fax: + 82 (0) 54 461 0630<br>
-                             Contact: PiaoXiangLie<br>"
+                             Contact: Harry Young Park<br>"
     show:
-      slogan: "No matter where you are from you, we will be dedicated to provide you with excellent products and satisfactory service."
+      slogan: "No matter where you are from, we will be dedicated to provide you with excellent products and satisfactory service."
     support:
       basic_information: "Basic Information"
       detailed_description: "Detailed Description"
@@ -89,7 +89,7 @@ en:
       department: "Department"
       phone: "Phone"
       fax: "Fax"
-      comment: "* We will reply to you within two business days. To ensure you receive our reply above, be sure to fill in the correct and effective."
+      comment: "*We will reply you within 2 working days. To ensure you receive our reply, be sure to fill in the correct and effective contents in above."
       commit: "Commit"
   product_categories:
     show:
@@ -153,7 +153,7 @@ en:
       index:
         newest: "Newest"
         technical_event: "Technical Event"
-        technical_event_content: "To help customers achieve business success, real success."
+        technical_event_content: "To help customers to achieve a successful business is the real success. Let you buy it easy, no worries."
         company_event: "Company Event"
         company_event_content: "To help customers achieve business success, real success."
         other_products: "Other Products"
