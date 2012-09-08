@@ -39,7 +39,7 @@ gem 'capistrano'
 gem "nifty-generators", :group => :development
 gem "devise", "~> 2.1.2"
 gem "jquery-rails"
-gem "activeadmin"
+gem "activeadmin", "0.4.4"
 gem "cancan"
 gem "carrierwave"
 gem "fog"
