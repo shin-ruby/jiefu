@@ -5,7 +5,6 @@ en:
   special_products: "Special Products"
   know_more: "Know More"
   more: "More"
-  more_button: "More》"
   feedback: "Feedback"
   rated_power: "Rated Power"
   cancel: "Cancel"
@@ -44,6 +43,7 @@ en:
   products:
     index:
       product_catalog: "Product Catalog"
+      more_button: "More》"
     product:
       type_of_system: "Type Of System"
       size: "Size（length×width×height）mm"
@@ -102,8 +102,8 @@ en:
       user:
         email: "Email："
         name: "Name："
-        password: "登录密码"
-        password_confirmation: "确认密码"
+        password: "password"
+        password_confirmation: "password_confirmation"
 
         phone: "Phone："
         company_name: "Company Name："
