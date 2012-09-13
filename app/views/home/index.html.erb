@@ -113,9 +113,8 @@
               <div class="span-5 last">
                 <p><span class="title-index"><%= t(".technical_event") %></span></p>
 
-                <p class="span-4 neirong"><%= t(".technical_event_content") %></p>
+                <p class="span-4 neirong"><%= link_to t(".technical_event_content"), event_articles_path %></p>
 
-                <p class="more-index"><%= link_to t(".more_button"), event_articles_path %></p>
               </div>
               <div class="span-3 last r"><%= image_tag "yanjiang.png" %></div>
             </div>
