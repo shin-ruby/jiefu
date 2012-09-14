@@ -6,7 +6,7 @@ en:
   know_more: "Know More"
   more: "More"
   feedback: "Feedback"
-  rated_power: "Rated Power"
+  rated_power: "Rated_Power"
   cancel: "Cancel"
   layouts:
     application:
@@ -50,7 +50,7 @@ en:
       rated_power: "Rated Power:"
       rated_impedance: "Rated Impedance:"
       sensitivity: "Sensitivity："
-      frequency_response_range: "Frequency Response Range："
+      frequency_response_range: "Frequency Response Range"
   articles:
     buy:
       buy_locally: "Buy Locally"

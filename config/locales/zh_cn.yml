@@ -49,7 +49,7 @@ zh_cn:
       rated_power: "额定功率:"
       rated_impedance: "阻抗:"
       sensitivity: "灵敏度："
-      frequency_response_range: "频响范围："
+      frequency_response_range: "频响范围"
   articles:
     buy:
       buy_locally: "本地购买"
