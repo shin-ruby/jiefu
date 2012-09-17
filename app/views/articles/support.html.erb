@@ -14,9 +14,9 @@
                 <%= f.collection_select :category_id_eq,ProductCategory.where(:parent_id => nil),:id,:name  %>
 
                 <br/>
-                <%= f.label :length_greater_than, t(".width")  %>
+                <%= f.label :length_greater_than, t(".length")  %>
                 <%= f.text_field :length_greater_than, :size=>"10" %> - <%= f.text_field :length_less_than, :size=>"10"%><br/>
-                <%= f.label :width_greater_than, t(".length") %>
+                <%= f.label :width_greater_than, t(".width") %>
                 <%= f.text_field :width_greater_than, :size=>"10" %> - <%= f.text_field :width_less_than, :size=>"10"%><br/>
                 <%= f.label :height_greater_than, t(".height") %>
                 <%= f.text_field :height_greater_than, :size=>"10" %> - <%= f.text_field :height_less_than, :size=>"10"%><br/>
